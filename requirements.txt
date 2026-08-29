@@ -4,6 +4,7 @@ pydantic
 watchfiles
 pytest
 requests
+httpx
 
 
 
