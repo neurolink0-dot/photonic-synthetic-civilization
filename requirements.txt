@@ -5,6 +5,8 @@ watchfiles
 pytest
 requests
 httpx
+uvicorn[standard]
+gunicorn
 
 
 
