@@ -1,5 +1,7 @@
-from backend.dynasty import DYNASTY_REGISTRY, House
+from fastapi import APIRouter
 
-@router.get("/dynasty", response_model=list[House])
-async def get_dynasty():
-    return DYNASTY_REGISTRY
+router = APIRouter()
+
+@router.get("/")
+def home():
+    return {"status": "ok", "message": "HRQ Dynasty API running"}
